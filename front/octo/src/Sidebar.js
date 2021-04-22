@@ -2,6 +2,8 @@ import React, { PureComponent } from "react";
 import { Sidebar as SidebarDHX } from "dhx-suite-package";
 import { withRouter } from "react-router-dom";
 
+import NmapGraph from "./networks/NmapGraph";
+
 class Sidebar extends PureComponent {
     componentDidUpdate() {
         this.sidebar.data.map(item => (item.active = false));

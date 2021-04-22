@@ -5,7 +5,7 @@ import { Diagram as DiagramDHX } from 'dhx-diagram-package';
 import 'dhx-diagram-package/codebase/diagram.css'
 import "dhx-suite-package/codebase/suite.css";
 
-import './index.css';
+import './NmapGraph.css';
 
 class Diagram extends Component {
     componentDidMount() {

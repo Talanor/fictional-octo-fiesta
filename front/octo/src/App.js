@@ -10,6 +10,8 @@ import Sidebar from "./Sidebar";
 import Toolbar from "./Toolbar";
 import Dataview from "./Dataview";
 
+import NmapGraph from './networks/NmapGraph';
+
 class App extends PureComponent {
     constructor(props) {
         super(props);
@@ -76,6 +78,17 @@ class App extends PureComponent {
                         />
                         <div className="app-content" ref={el => (this.el = el)}>
                             <Switch>
+                                <Route
+                                    path={`/networks`}
+                                    component={() => (
+                                        <NmapGraph
+                                            handleToolbarNavItems={array => this.setToolBarNavItems(array)}
+                                            setActiveExapmle={(id, formObserver) =>
+                                                this.setActiveExapmle(id, formObserver)
+                                            }
+                                        />
+                                    )}
+                                />
                                 <Route
                                     exact
                                     path={`/`}
