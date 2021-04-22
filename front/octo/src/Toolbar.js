@@ -24,48 +24,6 @@ class Toolbar extends PureComponent {
                     hidden: true,
                 },
                 {
-                    id: "basic_link",
-                    value: "Basic init",
-                    group: "toolbarNav",
-                    twoSate: true,
-                    hidden: true,
-                },
-                {
-                    id: "cdn_link",
-                    value: "CDN init",
-                    group: "toolbarNav",
-                    twoSate: true,
-                    hidden: true,
-                },
-                {
-                    id: "pre_link",
-                    value: "Pre-configured",
-                    group: "toolbarNav",
-                    twoSate: true,
-                    hidden: true,
-                },
-                {
-                    id: "props_link",
-                    value: "Using props",
-                    group: "toolbarNav",
-                    twoSate: true,
-                    hidden: true,
-                },
-                {
-                    id: "data_link",
-                    value: "Data",
-                    group: "toolbarNav",
-                    twoSate: true,
-                    hidden: true,
-                },
-                {
-                    id: "events_link",
-                    value: "Events",
-                    group: "toolbarNav",
-                    twoSate: true,
-                    hidden: true,
-                },
-                {
                     type: "spacer",
                 },
                 {
@@ -151,7 +109,7 @@ class Toolbar extends PureComponent {
             });
             this.toolbar.data.update("separ", { hidden: false });
             this.toolbar.data.update("doc", {
-                html: "DHX " + this.props.activeWidget + " documentation",
+                html: "",
                 hidden: false,
             });
         } else {

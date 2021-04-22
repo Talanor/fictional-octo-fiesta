@@ -11,6 +11,7 @@ import Toolbar from "./Toolbar";
 import Dataview from "./Dataview";
 
 import NmapGraph from './networks/NmapGraph';
+import TreePage from './tree/TreePage';
 
 class App extends PureComponent {
     constructor(props) {
@@ -82,6 +83,17 @@ class App extends PureComponent {
                                     path={`/networks`}
                                     component={() => (
                                         <NmapGraph
+                                            handleToolbarNavItems={array => this.setToolBarNavItems(array)}
+                                            setActiveExapmle={(id, formObserver) =>
+                                                this.setActiveExapmle(id, formObserver)
+                                            }
+                                        />
+                                    )}
+                                />
+                                <Route
+                                    path={`/host`}
+                                    component={() => (
+                                        <TreePage
                                             handleToolbarNavItems={array => this.setToolBarNavItems(array)}
                                             setActiveExapmle={(id, formObserver) =>
                                                 this.setActiveExapmle(id, formObserver)

@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^12.1.10",
     "dhx-diagram-package": "file:/home/talanor/projects/fictional-octo-fiesta/front/diagram",
     "dhx-suite-package": "file:/home/talanor/projects/fictional-octo-fiesta/front/suite",
+    "from-cdn": "^1.0.1",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

@@ -1,0 +1,65 @@
+[
+    {
+        "value": "nmap",
+        "id": "nmap",
+        "opened": true,
+        "items": [
+            {
+                "value": "vuln",
+                "id": "nmap-vuln",
+                "opened": false,
+                "items": []
+            }
+        ]
+    },
+    {
+        "value": ":22",
+        "id": "Books",
+        "opened": false,
+        "items": []
+    },
+    {
+        "value": ":80",
+        "id": "HTTP",
+        "opened": true,
+        "items": [
+            {
+                "value": "whatweb",
+                "id": "whatweb",
+                "opened": true,
+                "items": []
+            },
+            {
+                "value": "nikto",
+                "id": "nikto",
+                "opened": true,
+                "items": []
+            },
+            {
+                "value": "gobuster",
+                "id": "gobuster",
+                "items": [
+                    {
+                        "value": "/usr/share/wordlists/common.txt",
+                        "id": "wordlists-common"
+                    },
+                    {
+                        "value": "/usr/share/wordlists/big.txt",
+                        "id": "wordlists-common"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "value": ":443",
+        "id": "HTTPS",
+        "open": true,
+        "items": [
+            {
+                "value": "Sport",
+                "id": "Sport"
+            }
+        ]
+    }
+]
