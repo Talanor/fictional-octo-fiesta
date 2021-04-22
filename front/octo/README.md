@@ -3,6 +3,8 @@
 Most of the code right now is taken from https://github.com/DHTMLX/react-widgets
 I take no credit from this and just wish to tinker and learn stuff
 
+Almost forgot: I took the icons in part from https://www.flaticon.com/ and in part from th official DHTMLX website. Don't own them, don't claim them.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
