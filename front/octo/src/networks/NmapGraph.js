@@ -74,7 +74,7 @@ class Diagram extends Component {
 
     render() {
         return (
-            <div class="dhx_sample-container__widget" id="diagram_container"></div>
+            <div className="dhx_sample-container__widget" id="diagram_container"></div>
         );
     }
 }
@@ -82,7 +82,7 @@ class Diagram extends Component {
 class NmapGraph extends Component {
     render() {
         return (
-            <section class="dhx_sample-container">
+            <section className="dhx_sample-container">
                 <Diagram />
             </section>
         );

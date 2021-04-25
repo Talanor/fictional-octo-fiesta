@@ -3,20 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@mdi/font": "^5.9.55",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "ace": "^1.3.0",
     "dhx-diagram-package": "file:/home/talanor/projects/fictional-octo-fiesta/front/diagram",
     "dhx-suite-package": "file:/home/talanor/projects/fictional-octo-fiesta/front/suite",
     "from-cdn": "^1.0.1",
     "lodash": "^4.17.21",
+    "material-design-icons": "^3.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "smoothscroll-polyfill": "^0.4.4",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "xterm": "^4.11.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -8,11 +8,11 @@
     border: none;
     padding: 0;
     width: 100%;
-    padding: 24px;
+    /* padding: 24px; */
 }
 
 .logo-button img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 

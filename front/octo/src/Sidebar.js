@@ -2,7 +2,8 @@ import React, { PureComponent } from "react";
 import { Sidebar as SidebarDHX } from "dhx-suite-package";
 import { withRouter } from "react-router-dom";
 
-import NmapGraph from "./networks/NmapGraph";
+import '@mdi/font/css/materialdesignicons.css';
+import "./Sidebar.css";
 
 class Sidebar extends PureComponent {
     componentDidUpdate() {
@@ -13,6 +14,7 @@ class Sidebar extends PureComponent {
     componentDidMount() {
         this.sidebar = new SidebarDHX(this.el, {
             css: "dhx_widget--border_right",
+            collapsed: false,
             data: [
                 {
                     id: "logo",
@@ -23,20 +25,36 @@ class Sidebar extends PureComponent {
                     twoState: true,
                 },
                 {
+                    id: "sepId",
+                    type: "separator"
+                },
+                {
+                    value: "",
+                    id: "collapse",
+                    icon: "dxi dxi-menu-left",
+                    group: "nav",
+                    twoState: true,
+                    css: ["icon-menu-right"]
+                },
+                {
                     value: "Network",
                     id: "networks-link",
+                    icon: "mdi mdi-lan",
                     group: "nav",
                     twoState: true,
                 },
                 {
                     value: "Notifications",
                     id: "notifications-link",
+                    count: 25,
+                    icon: "mdi mdi-bell",
                     group: "nav",
                     twoState: true,
                 },
                 {
                     value: "Settings",
                     id: "settings-link",
+                    icon: "mdi mdi-cog",
                     group: "nav",
                     twoState: true,
                 },
@@ -47,7 +65,13 @@ class Sidebar extends PureComponent {
             this.props.handleActiveWidgetChange(activeWidget);
         }
         this.sidebar.events.on("click", id => {
-            if (id !== "logo") {
+            if (id === "collapse") {
+                var item = this.sidebar.data.getItem("collapse");
+                this.sidebar.data.update("collapse", {
+                    icon: (item.icon === "dxi dxi-menu-left") ? "dxi dxi-menu-right" : "dxi dxi-menu-left"
+                });
+                this.sidebar.toggle();
+            } else if (id !== "logo") {
                 const widgetName = id.split("-")[0];
                 this.props.history.push("/" + widgetName);
                 this.props.handleActiveWidgetChange(widgetName);

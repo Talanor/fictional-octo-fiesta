@@ -45,7 +45,7 @@
                     },
                     {
                         "value": "/usr/share/wordlists/big.txt",
-                        "id": "wordlists-common"
+                        "id": "wordlists-big"
                     }
                 ]
             }
